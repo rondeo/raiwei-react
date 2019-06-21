@@ -1,0 +1,1 @@
+window.setting = { host: 'localhost', port: 9994 };
