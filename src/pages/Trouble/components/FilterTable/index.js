@@ -108,7 +108,6 @@ export default class extends Component {
 
   fetchData = () => {
     const { startTime, endTime, status, level } = this.queryCache;
-    console.log(status)
     let condition = ' 1 = 1 ';
     if(startTime){
       condition += ` and createAt >= ${ startTime }`;

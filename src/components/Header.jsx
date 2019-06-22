@@ -50,14 +50,13 @@ export default class Header extends PureComponent {
               `编号[${msg.sn}]${msg.name}设备: ${ msg.title }`,
           });
           return;
-        case 'CAMERA_TROUBLE':
+       /* case 'CAMERA_TROUBLE':
           IceNotification.error({
             message: '监控报警',
-            duration: null,
             description:
               `IP为[${msg.ip}]的设备: 网络异常`,
           });
-          return;
+          return;*/
         case 'TROUBLE':
         this.setState({
           alarms: alarms + 1,

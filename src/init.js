@@ -11,9 +11,6 @@ socket.on('message', msg => {
   if(typeof msg === 'string'){
     msg = JSON.parse(msg);
   }
-  if(msg.fn!='PUSH'){
-    console.log('Message From Server', msg)
-  }
   /*推送到devicePanel页面的设备警告*/
   PubSub.publish(msg.topic || msg.event || 'message', msg);
 })
