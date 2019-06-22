@@ -119,7 +119,6 @@ export default class Alarm extends Component{
 
           troubleList[msg.trouble_id] = {
             id: msg.trouble_id,
-            name: msg.name,
             title: msg.title,
             sn: msg.sn,
             createAt: _.now(),
@@ -200,7 +199,7 @@ export default class Alarm extends Component{
                             key={`trouble_${idx}`}
                             title={trouble.title}
                             content={
-                              <div>{`设备：【${trouble.sn}】${trouble.name}发生 【 ${trouble.title} 】 故障`}</div>
+                              <div>{`设备：【${trouble.sn}】发生 【 ${trouble.title} 】 故障`}</div>
                             }
                             time={ moment(trouble.createAt).format('MM-DD HH:mm:ss') }
                             state="error"

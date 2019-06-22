@@ -190,12 +190,6 @@ export default class Header extends PureComponent {
                   <FoundationSymbol type="compass" size="small" />退出
                 </Link>
               </li>
-              {/*test li 跳转到device页面*/}
-              <li className="user-profile-menu-item">
-                <Link onClick={this.logout} to="/devices">
-                  <FoundationSymbol type="compass" size="small" />哈哈哈哈
-                </Link>
-              </li>
             </ul>
           </Balloon>
         </div>
